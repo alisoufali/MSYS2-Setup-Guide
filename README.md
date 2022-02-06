@@ -58,12 +58,14 @@ You may use Visual Studio Code (VSCODE) as your favorite IDE and want to use MSY
 2. Add the following lines inside the settings.json file.
    ```json
     "terminal.integrated.profiles.windows": {
-        "MSYS2": {
-            "path": "C:\\msys64\\msys2_shell.cmd",
-            "args": ["-defterm", "-here", "-no-start", "-mingw64"]
-        }
+        "BASH": {
+            "path": "C:\\msys64\\usr\\bin\\bash.exe",
+            "args": [ "--login", "-i"],
+            "env": { "MSYSTEM": "MINGW64", "CHERE_INVOKING": "1", "MSYS2_PATH_TYPE": "inherit"}}
+        },
     },
-    "terminal.integrated.defaultProfile.windows": "MSYS2"
+    "terminal.integrated.defaultProfile.windows": "BASH",
+    "git.path": "C:\\msys64\\usr\\bin\\git.exe"
     ```
 3. Restart the Visual Studio Code.
 4. Go to `Terminal -> New Terminal` (or use ``ctrl + shift + ` `` keyboard shortcut)
