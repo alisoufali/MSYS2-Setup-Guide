@@ -61,8 +61,8 @@ You may use Visual Studio Code (VSCODE) as your favorite IDE and want to use MSY
         "BASH": {
             "path": "C:\\msys64\\usr\\bin\\bash.exe",
             "args": [ "--login", "-i"],
-            "env": { "MSYSTEM": "MINGW64", "CHERE_INVOKING": "1", "MSYS2_PATH_TYPE": "inherit"}}
-        },
+            "env": { "MSYSTEM": "MINGW64", "CHERE_INVOKING": "1", "MSYS2_PATH_TYPE": "inherit"}
+        }
     },
     "terminal.integrated.defaultProfile.windows": "BASH",
     "git.path": "C:\\msys64\\usr\\bin\\git.exe"
