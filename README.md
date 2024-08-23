@@ -71,5 +71,14 @@ You may use Visual Studio Code (VSCODE) as your favorite IDE and want to use MSY
 4. Go to `Terminal -> New Terminal` (or use ``ctrl + shift + ` `` keyboard shortcut)
 5. The loaded terminal will be an MSYS2 terminal (MINGW64)
 
+### Oh-My-Zsh `\` Problem
+
+If you use oh-my-zsh and you see a `\` at the beginning of your terminal lines, there is a fix for it which is as following:
+1. Just add the following inside the settings.json file.
+    ```json
+    "terminal.integrated.windowsEnableConpty": false
+    ```
+2. Restart the Visual Studio Code.
+
 ---
 
